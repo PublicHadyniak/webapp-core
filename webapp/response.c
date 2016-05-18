@@ -4,10 +4,14 @@
 #include "response.h"
 
 struct response_s {
-	int statusCode;			// default 200 OK
-	char * data;
-	int dataLength;
+    unsigned char version_major;
+    unsigned char version_minor;
+	unsigned short statusCode;			// default 200 OK
+	const char * statusString;
 	map_t * headers;
+	char * contentBytes;
+	int contentBytesLength;
+	//
 	char * redirectURL;  	// default NULL
 };
 
