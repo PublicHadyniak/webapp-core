@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 #include "map.h"
 #include "response.h"
 
@@ -10,9 +12,11 @@ struct response_s {
 };
 
 response_t * response_new(void) {
-	/* */
+	// @todo
+	return NULL;
 }
-	
+
 void response_free(response_t * self) {
-	/* */
+	// @todo
+	free(self);
 }

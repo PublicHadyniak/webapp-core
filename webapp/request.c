@@ -1,13 +1,21 @@
+#include <stdlib.h>
+
 #include "map.h"
 #include "request.h"
 
 struct request_s {
-	map_t * const args;		// URI args
-	map_t * const form;		// POST args
-	map_t * const headers;
-	map_t * const files;
-	map_t * const cookies;
+	map_t * args;		// URI args
+	map_t * form;		// POST args
+	map_t * headers;
+	map_t * files;
+	map_t * cookies;
 };
 
-static request_t * request_new(void);
-static void request_free(request_t *);
+request_t * request_new(void) {
+    return NULL;
+}
+
+void request_free(request_t * self) {
+    // @todo
+    free(self);
+}
