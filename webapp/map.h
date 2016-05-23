@@ -1,5 +1,4 @@
-#ifndef MAP_H_INCLUDED
-#define MAP_H_INCLUDED
+#pragma once
 
 typedef struct map_s map_t;
 
@@ -14,4 +13,3 @@ int map_isEmpty(map_t * self);
 int map_getSize(map_t * self);
 int map_contains(map_t * self, const char * key);
 
-#endif // MAP_H_INCLUDED

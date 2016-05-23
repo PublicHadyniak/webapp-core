@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1463649536 source:/home/devincube/projects/webapp-core/webapp/app.c
+	<stdlib.h>
+	"app.h"
+
+1463728267 /home/devincube/projects/webapp-core/webapp/app.h
+	"request.h"
+	"response.h"
+	"http.h"
+
+1463645543 /home/devincube/projects/webapp-core/webapp/request.h
+	"http.h"
+
+1463645543 /home/devincube/projects/webapp-core/webapp/http.h
+
+1463645543 /home/devincube/projects/webapp-core/webapp/response.h
+
+1463645543 source:/home/devincube/projects/webapp-core/webapp/request.c
+	<stdlib.h>
+	"map.h"
+	"request.h"
+
+1463727275 /home/devincube/projects/webapp-core/webapp/map.h
+
+1463645543 source:/home/devincube/projects/webapp-core/webapp/response.c
+	<stdlib.h>
+	"map.h"
+	"response.h"
+

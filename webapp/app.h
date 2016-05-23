@@ -4,10 +4,13 @@
 #include "response.h"
 #include "http.h"
 
-const int APP_PORT_DEFAULT = 5000;
-const char * const APP_ADDR_DEFAULT = "127.0.0.1";
+static const int APP_PORT_DEFAULT = 5000;
+static const char * const APP_ADDR_DEFAULT = "127.0.0.1";
 //
 // web server app type
+/**
+ *  @brief Web application type
+*/
 typedef struct app_s app_t;
 
 //
@@ -18,6 +21,14 @@ app_t * app_new(void);
 void app_free(app_t * self);
 //
 // returns old user context
+
+/**
+*   @brief Set pointer to context
+*   @param ctx pointer to any user data
+*   @return old context pointer
+*
+*   This pointer will be passed as a paramater to all route request handlers
+*/
 void * app_setContext(app_t * self, void * ctx);
 void * app_getContext(app_t * self);
 //

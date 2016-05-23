@@ -24,3 +24,7 @@ void response_free(response_t * self) {
 	// @todo
 	free(self);
 }
+
+void response_setContent(response_t * self, const char * contentBytes, size_t contentLength) {
+    // @todo
+}
