@@ -2,6 +2,9 @@
 
 #include "http.h"
 
+/**
+*   A type for HTTP Request objects
+*/
 typedef struct request_s request_t;
 
 http_method_t request_getMethod(request_t * self);

@@ -2,6 +2,9 @@
 
 #include <stdlib.h>
 
+/**
+*   A type for HTTP Response objects
+*/
 typedef struct response_s response_t;
 
 void response_setStatus(response_t * self, int statusCode);

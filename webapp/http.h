@@ -1,6 +1,8 @@
 #pragma once
 
-// Flags
+/**
+*   Flags to define combinations of HTTP Request methods
+*/
 typedef enum http_method {
 	HTTP_GET 		= 1,
 	HTTP_HEAD 		= 1 << 1,

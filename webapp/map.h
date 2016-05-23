@@ -1,5 +1,8 @@
 #pragma once
 
+/**
+*   A type for string\string dictionary
+*/
 typedef struct map_s map_t;
 
 map_t * map_new(void);
